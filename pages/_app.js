@@ -15,6 +15,7 @@ export default class MyApp extends App {
             body {
               /* gray.900 */
               background-color: #171923;
+              color: white;
             }
           `}
         />
