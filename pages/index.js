@@ -277,7 +277,7 @@ const Home = () => (
   <Box bg="gray.900" h="inherit">
     <Head>
       <title>Elixir Lou</title>
-      <link rel="icon" href="/favicon.ico" />
+      <link rel="icon" href="/favicons/favicon.ico" />
     </Head>
 
     <Flex minH="100vh" flexDirection="column" alignItems="stretch">
