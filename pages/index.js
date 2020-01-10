@@ -6,7 +6,7 @@ import { CareToSpeak, Footer, Header, MeetupCard } from '../components';
 import { nextMeetup } from '../data/meetups';
 
 const socialDrop =
-  'https://raw.githubusercontent.com/Elixir-Lou/landing-page/master/public/images/socialDrop2.jpeg';
+  'https://raw.githubusercontent.com/Elixir-Lou/landing-page/master/public/images/socialDrop.jpeg';
 
 const meetupScheduled = moment
   .utc(nextMeetup.startDateTime)
