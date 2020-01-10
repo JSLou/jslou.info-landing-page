@@ -36,7 +36,11 @@ const Home = () => (
       <link rel="icon" href="/favicons/favicon.ico" />
       <meta key="og:type" property="og:type" content="website" />
       <meta key="og:url" property="og:url" content="https://elixirlou.org" />
-      <meta key="og:image" property="og:image" content="/socialDrop.png" />
+      <meta
+        key="og:image"
+        property="og:image"
+        content="/static/socialDrop.png"
+      />
       <meta key="og:title" property="og:title" content="Elixir Lou" />
       <meta
         key="og:description"
@@ -64,7 +68,7 @@ const Home = () => (
       <meta
         key="twitter:image"
         name="twitter:image"
-        content="/socialDrop.png"
+        content="/static/socialDrop.png"
       />
       <meta
         key="twitter:url"
