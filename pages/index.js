@@ -5,11 +5,8 @@ import React from 'react';
 import { CareToSpeak, Footer, Header, MeetupCard } from '../components';
 import { nextMeetup } from '../data/meetups';
 
-// const socialDrop =
-//   'https://raw.githubusercontent.com/Elixir-Lou/landing-page/master/public/images/socialDrop.jpeg';
-
 const socialDrop =
-  'https://raw.githubusercontent.com/remojansen/logo.ts/master/ts.png';
+  'https://raw.githubusercontent.com/Elixir-Lou/landing-page/master/public/images/socialDrop2.jpeg';
 
 const meetupScheduled = moment
   .utc(nextMeetup.startDateTime)
