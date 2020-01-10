@@ -1,7 +1,7 @@
 import { Flex, Image, Text } from '@chakra-ui/core';
 import React from 'react';
-import elixirDropWhite from '../public/elixirDropWhite.png';
-import whiteFleurDeLis from '../public/whiteFleurDeLis.png';
+import elixirDropWhite from '../public/images/elixirDropWhite.png';
+import whiteFleurDeLis from '../public/images/whiteFleurDeLis.png';
 
 const Header = () => {
   return (

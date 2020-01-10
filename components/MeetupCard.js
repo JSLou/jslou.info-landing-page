@@ -1,8 +1,8 @@
 import { Avatar, Box, Flex, Image, Link, Text } from '@chakra-ui/core';
 import moment from 'moment-timezone';
 import React from 'react';
-import githubIcon from '../public/githubIcon.png';
-import twitterIcon from '../public/twitterIcon.png';
+import githubIcon from '../public/images/githubIcon.png';
+import twitterIcon from '../public/images/twitterIcon.png';
 
 const GuestSpeaker = ({ speaker }) => {
   return (

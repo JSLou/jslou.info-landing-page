@@ -1,8 +1,8 @@
 import { AspectRatioBox, Box, Flex, Image, Link, Text } from '@chakra-ui/core';
 import React from 'react';
-import elixirDrop from '../public/elixirDrop.png';
-import erlangLogo from '../public/erlangLogo.png';
-import phoenixLogo from '../public/phoenixFrameworkLogo.png';
+import elixirDrop from '../public/images/elixirDrop.png';
+import erlangLogo from '../public/images/erlangLogo.png';
+import phoenixLogo from '../public/images/phoenixFrameworkLogo.png';
 
 const BoxImageLink = ({ to, src, alt }) => (
   <AspectRatioBox

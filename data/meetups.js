@@ -1,5 +1,5 @@
 // const { defaultProfileMale } from '../avatars';
-import markWindholtzAvatar from '../public/speakers/markWindholtz.jpeg';
+import markWindholtzAvatar from '../public/images/speakers/markWindholtz.jpeg';
 
 export const meetups = [
   {

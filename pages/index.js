@@ -4,6 +4,7 @@ import Head from 'next/head';
 import React from 'react';
 import { CareToSpeak, Footer, Header, MeetupCard } from '../components';
 import { nextMeetup } from '../data/meetups';
+import socialDrop from '../public/images/socialDrop.jpeg';
 
 const meetupScheduled = moment
   .utc(nextMeetup.startDateTime)
@@ -39,7 +40,7 @@ const Home = () => (
       <meta
         key="og:image"
         property="og:image"
-        content="/static/socialDrop.png"
+        content="https://raw.githubusercontent.com/Elixir-Lou/landing-page/master/public/socialDrop.png"
       />
       <meta key="og:title" property="og:title" content="Elixir Lou" />
       <meta
@@ -49,15 +50,7 @@ const Home = () => (
       />
 
       {/* Twitter Meta */}
-      {meetupScheduled ? (
-        <meta
-          key="twitter:card"
-          name="twitter:card"
-          content="summary_large_image"
-        />
-      ) : (
-        <meta key="twitter:card" name="twitter:card" content="summary" />
-      )}
+      <meta key="twitter:card" name="twitter:card" content="summary" />
       <meta key="twitter:domain" name="twitter:domain" value="elixirlou.org" />
       <meta key="twitter:title" name="twitter:title" value="Elixir Lou" />
       <meta
@@ -65,11 +58,7 @@ const Home = () => (
         name="twitter:description"
         value="Louisville Kentucky's meetup for all things Elixir/Erlang"
       />
-      <meta
-        key="twitter:image"
-        name="twitter:image"
-        content="/static/socialDrop.png"
-      />
+      <meta key="twitter:image" name="twitter:image" content={socialDrop} />
       <meta
         key="twitter:url"
         name="twitter:url"
@@ -80,41 +69,6 @@ const Home = () => (
         name="twitter:creator"
         content="@elixir_lou"
       />
-
-      {meetupScheduled && (
-        <meta
-          key="twitter:label1"
-          name="twitter:label1"
-          value={nextMeetup.title}
-        />
-      )}
-
-      {meetupScheduled && (
-        <meta
-          key="twitter:data1"
-          name="twitter:data1"
-          value={moment
-            .utc(nextMeetup.startDateTime)
-            .tz(nextMeetup.timezone)
-            .format('lll')}
-        />
-      )}
-
-      {meetupScheduled && (
-        <meta
-          key="twitter:label2"
-          name="twitter:label2"
-          value="Guest Speaker"
-        />
-      )}
-
-      {meetupScheduled && (
-        <meta
-          key="twitter:data2"
-          name="twitter:data2"
-          value={nextMeetup.speaker.fullName}
-        />
-      )}
     </Head>
 
     <Flex minH="100vh" flexDirection="column" alignItems="stretch">
