@@ -4,7 +4,12 @@ import Head from 'next/head';
 import React from 'react';
 import { CareToSpeak, Footer, Header, MeetupCard } from '../components';
 import { nextMeetup } from '../data/meetups';
-import socialDrop from '../public/images/socialDrop.jpeg';
+
+// const socialDrop =
+//   'https://raw.githubusercontent.com/Elixir-Lou/landing-page/master/public/images/socialDrop.jpeg';
+
+const socialDrop =
+  'https://raw.githubusercontent.com/remojansen/logo.ts/master/ts.png';
 
 const meetupScheduled = moment
   .utc(nextMeetup.startDateTime)
@@ -37,11 +42,7 @@ const Home = () => (
       <link rel="icon" href="/favicons/favicon.ico" />
       <meta key="og:type" property="og:type" content="website" />
       <meta key="og:url" property="og:url" content="https://elixirlou.org" />
-      <meta
-        key="og:image"
-        property="og:image"
-        content="https://raw.githubusercontent.com/Elixir-Lou/landing-page/master/public/socialDrop.png"
-      />
+      <meta key="og:image" property="og:image" content={socialDrop} />
       <meta key="og:title" property="og:title" content="Elixir Lou" />
       <meta
         key="og:description"
