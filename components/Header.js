@@ -5,7 +5,11 @@ import JsLouLogo from '../public/images/logo-2015.png';
 const Header = () => {
   return (
     <Flex py={{ base: 5 }} justifyContent={{ base: 'center' }} bg="gray.900">
-      <Image w={{ base: '60%' }} src={JsLouLogo} alt="JSLou Logo" />
+      <Image
+        w={{ base: '60%', md: '275px' }}
+        src={JsLouLogo}
+        alt="JSLou Logo"
+      />
     </Flex>
   );
 };
