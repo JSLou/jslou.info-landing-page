@@ -6,7 +6,7 @@ import { CareToSpeak, Footer, Header, MeetupCard } from '../components';
 import { nextMeetup } from '../data/meetups';
 
 const socialDrop =
-  'https://github.com/JSLou/jslou.info-landing-page/blob/master/public/images/fleur-de-lis.png';
+  'https://raw.githubusercontent.com/JSLou/jslou.info-landing-page/master/public/images/socialDrop.JPG';
 
 const meetupScheduled = moment
   .utc(nextMeetup.startDateTime)
