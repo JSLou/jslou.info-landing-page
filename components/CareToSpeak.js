@@ -23,13 +23,13 @@ const CareToSpeak = ({ nextMeetup }) => {
       <Divider />
       <Text>
         You can find us on Twitter{' '}
-        <Link href="https://twitter.com/JsLouKy" color="red.500">
+        <Link href="https://twitter.com/JsLouKy" color="red.600">
           @JsLouKy
         </Link>
       </Text>
       <Text>
         or on Slack via #Javascript #React #Node and more on{' '}
-        <Link href="https://louisvilletech.org" color="red.500">
+        <Link href="https://louisvilletech.org" color="red.600">
           louisvilletech.org
         </Link>
       </Text>
