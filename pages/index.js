@@ -4,9 +4,9 @@ import Head from 'next/head';
 import React from 'react';
 import { CareToSpeak, Footer, Header, MeetupCard } from '../components';
 import { nextMeetup } from '../data/meetups';
-import socialDrop from '../public/images/socialDrop.png';
 
-// 'https://raw.githubusercontent.com/Elixir-Lou/landing-page/master/public/images/socialDrop.jpeg';
+const socialDrop =
+  'https://github.com/JSLou/jslou.info-landing-page/blob/master/public/images/fleur-de-lis.png';
 
 const meetupScheduled = moment
   .utc(nextMeetup.startDateTime)
