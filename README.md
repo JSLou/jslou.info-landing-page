@@ -1,2 +1,2 @@
-# Elixir-Lou
-Landing Page for Elixir Lou -- Next, Chakra-UI
+# JS-Lou
+Landing Page for JS Lou -- Next, Chakra-UI

@@ -121,7 +121,7 @@ const SocialIcons = ({ speaker }) => (
         src={twitterIcon}
         alt="@Twitter"
       />
-      <Text color="purple.500" ml={{ base: 2 }}>
+      <Text color="teal.600" ml={{ base: 2 }}>
         @{speaker.twitter}
       </Text>
     </Link>
@@ -137,7 +137,7 @@ const SocialIcons = ({ speaker }) => (
         src={githubIcon}
         alt="@GitHub"
       />
-      <Text color="purple.500" ml={{ base: 2 }}>
+      <Text color="teal.600" ml={{ base: 2 }}>
         @{speaker.github}
       </Text>
     </Link>

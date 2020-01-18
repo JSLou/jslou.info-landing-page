@@ -1,8 +1,8 @@
 import { AspectRatioBox, Box, Flex, Image, Link, Text } from '@chakra-ui/core';
 import React from 'react';
-import elixirDrop from '../public/images/elixirDrop.png';
-import erlangLogo from '../public/images/erlangLogo.png';
-import phoenixLogo from '../public/images/phoenixFrameworkLogo.png';
+import JSLogo from '../public/images/JSLogo.png';
+import NodeLogo from '../public/images/nodeLogo.png';
+import TSLogo from '../public/images/TSLogo.png';
 
 const BoxImageLink = ({ to, src, alt }) => (
   <AspectRatioBox
@@ -17,7 +17,7 @@ const BoxImageLink = ({ to, src, alt }) => (
     borderWidth="3px"
     overflow="hidden"
     _hover={{
-      borderColor: 'purple.400',
+      borderColor: 'red.400',
       img: { transform: 'rotate(10deg)', w: '80%' },
     }}>
     <Link href={to} isExternal>
@@ -36,19 +36,19 @@ const LanguageLinks = () => {
         maxW="500px"
         justifyContent="space-around">
         <BoxImageLink
-          to="https://elixir-lang.org/"
-          src={elixirDrop}
-          alt="Elixir Logo"
+          to="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+          src={JSLogo}
+          alt="JavaScript Logo"
         />
         <BoxImageLink
-          to="https://www.phoenixframework.org/"
-          src={phoenixLogo}
-          alt="Phoenix Framework Logo"
+          to="https://www.typescriptlang.org/docs/home.html"
+          src={TSLogo}
+          alt="Typescript Logo"
         />
         <BoxImageLink
-          to="https://www.erlang.org/"
-          src={erlangLogo}
-          alt="Erlang Logo"
+          to="https://nodejs.org/en/docs/"
+          src={NodeLogo}
+          alt="Node Logo"
         />
       </Flex>
     </Flex>
@@ -59,13 +59,13 @@ const Copyright = () => {
   const currentYear = new Date().getFullYear();
   return (
     <Text pr={3} color="gray.400">
-      &copy;{currentYear} Elixir-Lou
+      &copy;{currentYear} JS-Lou
     </Text>
   );
 };
 
 const Footer = () => (
-  <Box pb={{ base: 3 }} bg="purple.900">
+  <Box pb={{ base: 3 }} bg="gray.900">
     <LanguageLinks />
     <Flex mr={{ base: 2 }} justifyContent="flex-end">
       <Copyright />

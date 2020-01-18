@@ -11,7 +11,7 @@ const CareToSpeak = ({ nextMeetup }) => {
       bg="gray.100"
       borderRadius={{ base: '20px' }}
       color="black">
-      <Text fontSize={{ base: '1.2rem' }} fontWeight="bold" color="purple.800">
+      <Text fontSize={{ base: '1.2rem' }} fontWeight="bold" color="red.800">
         Sorry!
       </Text>
       <Text>No meetup is currently scheduled.</Text>
@@ -23,13 +23,13 @@ const CareToSpeak = ({ nextMeetup }) => {
       <Divider />
       <Text>
         You can find us on Twitter{' '}
-        <Link href="https://twitter.com/elixir_lou" color="purple.500">
-          @elixir_lou
+        <Link href="https://twitter.com/JsLouKy" color="red.500">
+          @JsLouKy
         </Link>
       </Text>
       <Text>
-        or on Slack via #elixir on{' '}
-        <Link href="https://louisvilletech.org" color="purple.500">
+        or on Slack via #Javascript #React #Node and more on{' '}
+        <Link href="https://louisvilletech.org" color="red.500">
           louisvilletech.org
         </Link>
       </Text>
