@@ -1,5 +1,5 @@
-// const { defaultProfileMale } from '../avatars';
-import shannonBeachAvatar from '../public/images/speakers/Shannon-Beach.jpg';
+// Example Avatar import
+// import shannonBeachAvatar from '../public/images/speakers/Shannon-Beach.jpg';
 
 export const meetups = [
   {
@@ -7,10 +7,11 @@ export const meetups = [
     // 6:00 p.m. ETC in UTC
     startDateTime: '2020-01-29T23:00:00.000Z',
     timezone: 'EST',
-    title: 'TITLE',
-    description: 'Talk Description Here...',
-    links: ['slides.com'],
-    // links: null,
+    title: '1 SPA 1 Endpoint 1 Table 1 Serverless App',
+    description:
+      'A sample build using AWS (VueJs - AppSync - Dynamodb)  to create a complete full-stack server app',
+    // links: ['slides.com'],
+    links: null,
     location: {
       addressLink: 'https://goo.gl/maps/oTtxTn2aF2ZNU8PX9',
       fullAddress: '700 N Hurstbourne Pkwy #250, Louisville, KY 40222',
@@ -20,13 +21,13 @@ export const meetups = [
       firstName: 'Jermaine',
       lastName: 'Watkins',
       fullName: 'Jermaine Watkin',
-      email: 'email@speaker.com',
-      github: 'jslou',
-      twitter: 'jslouky',
+      email: null,
+      github: null,
+      twitter: null,
       // avatar = imported image component
       // default to initials from name if set to null.
-      avatar: shannonBeachAvatar,
-      bio: 'Jermaine Watkins is...',
+      avatar: null,
+      bio: null,
     },
   },
 ];

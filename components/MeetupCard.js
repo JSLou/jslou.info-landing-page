@@ -110,37 +110,41 @@ const SocialIcons = ({ speaker }) => (
     flexDirection={{ base: 'column', md: 'row' }}
     justifyContent={{ base: 'center', md: 'space-around' }}
     alignItems={{ base: 'center' }}>
-    <Link
-      display="flex"
-      my={{ base: 1, md: 0 }}
-      href={`https://twitter.com/${speaker.twitter}`}>
-      <Image
-        backgroundSize="100%"
-        w={{ base: '25px' }}
-        h={{ base: '25px' }}
-        src={twitterIcon}
-        alt="@Twitter"
-      />
-      <Text color="teal.600" ml={{ base: 2 }}>
-        @{speaker.twitter}
-      </Text>
-    </Link>
+    {speaker.twitter && (
+      <Link
+        display="flex"
+        my={{ base: 1, md: 0 }}
+        href={`https://twitter.com/${speaker.twitter}`}>
+        <Image
+          backgroundSize="100%"
+          w={{ base: '25px' }}
+          h={{ base: '25px' }}
+          src={twitterIcon}
+          alt="@Twitter"
+        />
+        <Text color="teal.600" ml={{ base: 2 }}>
+          @{speaker.twitter}
+        </Text>
+      </Link>
+    )}
 
-    <Link
-      display="flex"
-      my={{ base: 1, md: 0 }}
-      href={`https://github.com/${speaker.github}`}>
-      <Image
-        backgroundSize="100%"
-        w={{ base: '25px' }}
-        h={{ base: '25px' }}
-        src={githubIcon}
-        alt="@GitHub"
-      />
-      <Text color="teal.600" ml={{ base: 2 }}>
-        @{speaker.github}
-      </Text>
-    </Link>
+    {speaker.github && (
+      <Link
+        display="flex"
+        my={{ base: 1, md: 0 }}
+        href={`https://github.com/${speaker.github}`}>
+        <Image
+          backgroundSize="100%"
+          w={{ base: '25px' }}
+          h={{ base: '25px' }}
+          src={githubIcon}
+          alt="@GitHub"
+        />
+        <Text color="teal.600" ml={{ base: 2 }}>
+          @{speaker.github}
+        </Text>
+      </Link>
+    )}
   </Flex>
 );
 
@@ -155,8 +159,8 @@ const MeetupCard = ({ nextMeetup }) => {
       borderRadius={{ base: '20px' }}
       color="black">
       <GuestSpeaker speaker={nextMeetup.speaker} />
-      <Title title={nextMeetup.title} />
       <DateTime nextMeetup={nextMeetup} />
+      <Title title={nextMeetup.title} />
       <Text>{nextMeetup.description}</Text>
       <MeetupLinks links={nextMeetup.links} />
       <MeetupLocation location={nextMeetup.location} />
