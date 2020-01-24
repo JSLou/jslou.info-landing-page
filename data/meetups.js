@@ -1,5 +1,5 @@
 // Example Avatar import
-// import shannonBeachAvatar from '../public/images/speakers/Shannon-Beach.jpg';
+import speakerAvatar from '../public/images/speakers/jermaine-watkins.jpg';
 
 export const meetups = [
   {
@@ -17,16 +17,17 @@ export const meetups = [
       fullAddress: '700 N Hurstbourne Pkwy #250, Louisville, KY 40222',
       name: 'Tek Systems - 700 Room',
     },
+    meetupLink: 'https://www.meetup.com/JSLouKY/events/268168075/',
     speaker: {
       firstName: 'Jermaine',
       lastName: 'Watkins',
       fullName: 'Jermaine Watkin',
       email: null,
-      github: null,
-      twitter: null,
+      github: 'jwatkins0101',
+      twitter: 'jwatkinsky',
       // avatar = imported image component
       // default to initials from name if set to null.
-      avatar: null,
+      avatar: speakerAvatar,
       bio: null,
     },
   },

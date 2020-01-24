@@ -32,6 +32,7 @@ const GuestSpeaker = ({ speaker }) => {
         </Text>
         <Text fontSize={{ base: '1.2rem' }}>{speaker.fullName}</Text>
       </Flex>
+      <SocialIcons speaker={speaker} />
     </Flex>
   );
 };
@@ -148,6 +149,15 @@ const SocialIcons = ({ speaker }) => (
   </Flex>
 );
 
+const Rsvp = ({ link }) =>
+  link ? (
+    <Flex justifyContent="center">
+      <Link href={link} isExternal fontWeight="bold" color="teal.400">
+        RSVP on meetup here!
+      </Link>
+    </Flex>
+  ) : null;
+
 const MeetupCard = ({ nextMeetup }) => {
   return (
     <Flex
@@ -162,9 +172,9 @@ const MeetupCard = ({ nextMeetup }) => {
       <DateTime nextMeetup={nextMeetup} />
       <Title title={nextMeetup.title} />
       <Text>{nextMeetup.description}</Text>
+      <Rsvp link={nextMeetup.meetupLink} />
       <MeetupLinks links={nextMeetup.links} />
       <MeetupLocation location={nextMeetup.location} />
-      <SocialIcons speaker={nextMeetup.speaker} />
     </Flex>
   );
 };
